@@ -1,0 +1,141 @@
+/*====== VARIABLES =======*/
+:root {}
+
+/*====== STRUCTURE =======*/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0px;
+  max-width: 100%;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body[data-rtl="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+a,
+button,
+input,
+textarea {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+nav {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1d0921;
+}
+
+nav a {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 7vw);
+  grid-template-columns: repeat(3, 7vw);
+  text-align: center;
+  padding: 100px 0 50px;
+}
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid #1d0921;
+  font-size: 4em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+.box:hover{
+  background: rgba(105, 98, 107,0.2);
+}
+.game-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.game-info button{
+  border-radius: 7px;
+  width: 200px;
+  height: 55px;
+  font-size: 16px;
+  border:none;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(31,17,31,1);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(31,17,31,1);
+  box-shadow: 2px 2px 5px 0px rgba(31,17,31,1);
+  cursor: pointer;
+  background: rgb(230, 229, 230);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  transition: 0.6s all ease-in-out;
+  width: 5vw;
+  height: 5vh;
+}
+.game-info button:hover{
+background: rgb(206, 206, 206);
+}
+.bl-0{
+  border-left: 0;
+}
+.bt-0{
+  border-top: 0;
+}
+.br-0{
+  border-right:0 ;
+}
+.bb-0{
+  border-bottom: 0;
+}
+.info{
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 20px;
+}
